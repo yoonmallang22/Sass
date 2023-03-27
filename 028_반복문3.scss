@@ -1,0 +1,10 @@
+// while문
+$jisoo: 5;
+@while $jisoo > 1 {
+  $jisoo: $jisoo - 1;
+  .content-#{$jisoo} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

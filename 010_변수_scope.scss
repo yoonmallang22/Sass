@@ -1,0 +1,17 @@
+// Sass에서는 지역변수보다는 전역변수 사용하는 것을 권장한다
+
+.one {
+  // 지역변수
+  $value: red;
+  color: $value;
+
+  .three {
+    background-color: $value;
+  }
+}
+
+// 에러가 있으면 컴파일되지 않는다
+// Error: Undefined variable.
+// .two {
+//   color: $value;
+// }

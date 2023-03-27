@@ -1,0 +1,20 @@
+.base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10%;
+}
+// class명을 extend 하는 경우 다중 선택자를 사용할 수 없다
+// .base-box + .one {
+//   width: 100px;
+//   height: 100px;
+//   background-color: red;
+//   border-radius: 10%;
+// }
+
+.box {
+  @extend .base-box;
+  // Error: complex selectors may not be extended.
+  // @extend .base-box + .one;
+  border: 10px solid black;
+}

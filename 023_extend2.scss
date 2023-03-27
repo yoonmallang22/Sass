@@ -1,0 +1,15 @@
+// extend를 사용할 때 클래스보다 %를 사용하기를 권장한다
+%base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10%;
+  .one {
+    padding: 10px;
+  }
+}
+
+.box {
+  @extend %base-box;
+  border: 10px solid black;
+}
